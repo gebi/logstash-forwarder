@@ -28,5 +28,6 @@ rpm deb: compile generate-init-script
 		--replaces lumberjack \
 		--description "a log shipping tool" \
 		--url "https://github.com/elasticsearch/logstash-forwarder" \
+		--config-files /etc/default/logstash-forwarder \
 		./logstash-forwarder=$(PREFIX)/bin/ \
 		./build/=/
