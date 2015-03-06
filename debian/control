@@ -1,0 +1,17 @@
+Source: logstash-forwarder
+Section: admin
+Priority: optional
+Maintainer: Michael Gebetsroither <michael@mgeb.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/elasticsearch/logstash-forwarder
+Vcs-Git: git://github.com/gebi/logstash-forwarder.git
+Vcs-Browser: https://github.com/gebi/logstash-forwarder
+
+Package: logstash-forwarder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool to ship logs to a central logstash instance
+ Logstash-forwarder uses the lumberjack protocol to ship
+ logs to a central logstash instance with only minimal overhead
+ and the advantage of having no external dependencies.

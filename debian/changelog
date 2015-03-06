@@ -1,0 +1,11 @@
+logstash-forwarder (0.4.0-2) stable; urgency=low
+
+  * Initial Release of proper debian package.
+
+ -- Michael Gebetsroither <michael@mgeb.org>  Fri, 06 Mar 2015 18:59:23 +0100
+
+logstash-forwarder (0.4.0-1) stable; urgency=medium
+
+  * Package created with FPM.
+
+ -- <michael@mgeb.org>  Thu, 26 Feb 2015 10:42:12 +0100

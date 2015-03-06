@@ -1,0 +1,13 @@
+logstash-forwarder for Debian
+-----------------------------
+
+Only use hostnames for certificates, NO IPs, or search for how to create
+them that go accepts them (hint: missing IP SAN).
+Best way is to just use hostnames and if no DNS is available just add them
+to /etc/hosts.
+
+eg. create cert/key for logstash receiver
+openssl req -newkey rsa:2048 -x509 -days 3650 -batch -nodes -keyout foo.key -out foo.pem -subj /CN=foo.example.com
+And copy foo.pem to your logstash-forwarder nodes.
+
+ -- Michael Gebetsroither <michael@mgeb.org>  Fri, 06 Mar 2015 18:59:23 +0100

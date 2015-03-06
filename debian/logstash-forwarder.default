@@ -1,0 +1,15 @@
+# Defaults for logstash-forwarder initscript
+# sourced by /etc/init.d/logstash-forwarder
+# installed at /etc/default/logstash-forwarder by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# default user/group logstash-forwarder is executed
+#   logstash-forwarder is in group `adm` to read log files
+#USER=logstash-forwarder
+#GROUP=logstash-forwarder
+
+# Additional options that are passed to the Daemon.
+#DAEMON_OPTS="-config=/etc/logstash-forwarder.conf"
